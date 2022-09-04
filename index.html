@@ -1,54 +1,58 @@
 <html>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <head>
         <!╌ External style sheet╌>
         <link rel="stylesheet" type="text/css" href="base.css"/>
     </head>
+    <!-- CSS -->
+    <style>
+        body {
+          font-family: "Audiowide", sans-serif;
+        }
+    </style>
     
-    <h1>Tom's Portfolio</h1>
-    <h2>Software Developer</h2>
-    <img src='./great-img.jpg' alt="A great image of Tom is available in person." style="
-        width:200px;
-        height:200px;">
-    
-    <!-- Testing React -->
-    <div id="like_button_container"></div>
-    
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-      
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
-    <!-- Testing React -->
-      
-    <h3 style="text-decoration: underline;">Bio</h3>
-    <p> A loosely bound collection of source for now.</p>
+    <body>
+        <h1>Tom's Portfolio</h1>
+        <h2>Software Developer</h2>
+        <img src='./great-img.jpg' alt="A great image of Tom is available in person." style="
+            width:200px;
+            height:200px;">
 
-    <h4 style="text-decoration: underline;">Modern C++</h4>
-    <ul>
-        <li><a href="https://github.com/Testabro/CppND-System-Monitor">Linux OS Resource Monitoring via /proc</a></li>
-        <li><a href="https://github.com/Testabro/CppND-Route-Planning-Project">Graph Traversial with A*</a></li>
-        <li><a href="https://github.com/Testabro/CppND-Memory-Management-Chatbot">Memory Mangement using pointers + smart pointers</a></li>
-        <li><a href="https://github.com/Testabro/CppND-Program-a-Concurrent-Traffic-Simulation">Concurrent Program Using Tasks</a></li>
-    </ul>
-    
-    <br><br>
-    <h4 style="text-decoration: underline;">Java + JavaScript</h4>
-    <ul>
-        <li><a href="https://github.com/Testabro/bookstore">A web facing bare bones book store</a></li>
-    </ul>
-    <br><br>
-    
-        <h4 style="text-decoration: underline;">Python</h4>
-    <ul>
-        <li><a href="https://github.com/Testabro/algorithms">Common algroithm building blocks</a></li>
-    </ul>
-    <br><br>
+        <!-- Testing React -->
+        <div id="like_button_container"></div>
 
-    <h3 style="text-decoration: underline;">Work in progress</h3>
-    <ol>
-        <li>C++ shared memory message queue across a network</li>
-        <li>Python Utils to ease the drudgery</li>
-    </ol>
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Load our React component. -->
+        <script src="like_button.js"></script>
+        <!-- Testing React -->
+
+        <h3 style="text-decoration: underline;">Bio</h3>
+        <p> A loosely bound collection of source for now.</p>
+
+        <h4 style="text-decoration: underline;">Modern C++</h4>
+        <ul>
+            <li><a href="https://github.com/Testabro/digital-wallet">A digital backend wallet service with API</a></li>
+            <li><a href="https://github.com/Testabro/CppND-System-Monitor">Linux OS Resource Monitoring via /proc</a></li>
+            <li><a href="https://github.com/Testabro/CppND-Route-Planning-Project">Graph Traversial with A*</a></li>
+            <li><a href="https://github.com/Testabro/CppND-Memory-Management-Chatbot">Memory Mangement using pointers + smart pointers</a></li>
+            <li><a href="https://github.com/Testabro/CppND-Program-a-Concurrent-Traffic-Simulation">Concurrent Program Using Tasks</a></li>
+        </ul>
+
+        <br><br>
+        <h4 style="text-decoration: underline;">Bookstore</h4>
+        <ul>
+            <li><a href="https://github.com/Testabro/bookstore">A web facing bare bones book store</a></li>
+        </ul>
+        <br><br>
+
+        <h4 style="text-decoration: underline;">Building Blocks</h4>
+        <ul>
+            <li><a href="https://github.com/Testabro/algorithms">Common algroithm building blocks</a></li>
+        </ul>
+        <br><br>
+    </body>
 </html>
