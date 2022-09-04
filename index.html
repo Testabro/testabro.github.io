@@ -12,44 +12,50 @@
         </style>
     </head>
     <body>
-        <h1>Tom Estabrook</h1>
-        <h2>Software Developer</h2>
-        <img src='./great-img.jpg' alt="A great image of Tom is available in person." style="
-            width:200px;
-            height:200px;">
+        <div class="flex-container">
+            <div class="flex-item">
+                <h1>Tom Estabrook</h1>
+                <h2>Software Developer</h2>
+                <img src='./great-img.jpg' alt="A great image of Tom is available in person." style="
+                    width:200px;
+                    height:200px;">
 
-        <!-- Testing React -->
-        <div id="like_button_container"></div>
+                <!-- Testing React -->
+                <div id="like_button_container"></div>
 
-        <!-- Load React. -->
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+                <!-- Load React. -->
+                <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+                <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+                <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
-        <!-- Load our React component. -->
-        <script src="like_button.js"></script>
-        <!-- Testing React -->
+                <!-- Load our React component. -->
+                <script src="like_button.js"></script>
+                <!-- Testing React -->
 
-        <h3 style="text-decoration: underline;">Bio</h3>
-        <p> A loosely bound collection of source for now.</p>
+                <h3 style="text-decoration: underline;">Bio</h3>
+                <p> A loosely bound collection of source for now.</p>
+            </div>
+            
+            <div class="flex-item">
+                <h4 style="text-decoration: underline;">Modern C++</h4>
+                <ul>
+                    <li><a href="https://github.com/Testabro/digital-wallet">A digital backend wallet service with API</a></li>
+                    <li><a href="https://github.com/Testabro/CppND-System-Monitor">Linux OS Resource Monitoring via /proc</a></li>
+                    <li><a href="https://github.com/Testabro/CppND-Route-Planning-Project">Graph Traversial with A*</a></li>
+                    <li><a href="https://github.com/Testabro/CppND-Memory-Management-Chatbot">Memory Mangement using pointers + smart pointers</a></li>
+                    <li><a href="https://github.com/Testabro/CppND-Program-a-Concurrent-Traffic-Simulation">Concurrent Program Using Tasks</a></li>
+                </ul>
 
-        <h4 style="text-decoration: underline;">Modern C++</h4>
-        <ul>
-            <li><a href="https://github.com/Testabro/digital-wallet">A digital backend wallet service with API</a></li>
-            <li><a href="https://github.com/Testabro/CppND-System-Monitor">Linux OS Resource Monitoring via /proc</a></li>
-            <li><a href="https://github.com/Testabro/CppND-Route-Planning-Project">Graph Traversial with A*</a></li>
-            <li><a href="https://github.com/Testabro/CppND-Memory-Management-Chatbot">Memory Mangement using pointers + smart pointers</a></li>
-            <li><a href="https://github.com/Testabro/CppND-Program-a-Concurrent-Traffic-Simulation">Concurrent Program Using Tasks</a></li>
-        </ul>
+                <h4 style="text-decoration: underline;">Bookstore</h4>
+                <ul>
+                    <li><a href="https://github.com/Testabro/bookstore">A web facing bare bones book store</a></li>
+                </ul>
 
-        <h4 style="text-decoration: underline;">Bookstore</h4>
-        <ul>
-            <li><a href="https://github.com/Testabro/bookstore">A web facing bare bones book store</a></li>
-        </ul>
-
-        <h4 style="text-decoration: underline;">Building Blocks</h4>
-        <ul>
-            <li><a href="https://github.com/Testabro/algorithms">Common algroithm building blocks</a></li>
-        </ul>
+                <h4 style="text-decoration: underline;">Building Blocks</h4>
+                <ul>
+                    <li><a href="https://github.com/Testabro/algorithms">Common algroithm building blocks</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
