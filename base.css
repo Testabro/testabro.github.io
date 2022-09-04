@@ -2,6 +2,13 @@ a {
     color: white;
   }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .flex-container {
   /* We first create a flex layout context */
   display: flex;
