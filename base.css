@@ -16,6 +16,7 @@ a {
     color: black;
     width: 300px;
     height: 350px;
+    padding: 3px;
 }
 
 .flex-container {
