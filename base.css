@@ -6,16 +6,16 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 350px;
 }
 
 #content {
     background: white;
     text-align: left;
     color: black;
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .flex-container {
