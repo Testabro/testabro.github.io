@@ -1,9 +1,10 @@
 a {
-    color: white;
+    color: green;
   }
 
 body {
     align-items: center;
+    color: black;
 }
 
 #bio {
@@ -15,6 +16,7 @@ body {
 }
 
 #content {
+    background: white;
     text-align: left;
     width: 500px;
     height: 400px;
@@ -30,7 +32,7 @@ body {
    * flex-direction: row;
    * flex-wrap: wrap;
    */
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   
   /* Then we define how is distributed the remaining space */
   justify-content: center;
