@@ -19,7 +19,7 @@ a {
   flex-flow: row wrap;
   
   /* Then we define how is distributed the remaining space */
-  justify-content: space-evenly;
+  justify-content: center;
   
   padding: 0;
   margin: 0;
@@ -30,9 +30,9 @@ a {
   background: tomato;
   padding: 5px;
   width: 500px;
-  height: 800px;
+  height: 500px;
   margin-top: 1px;
-  line-height: 500px;
+  #line-height: 500px;
   color: white;
   font-weight: bold;
   font-size: 11pt;
