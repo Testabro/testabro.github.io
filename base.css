@@ -35,7 +35,8 @@ a {
   
   padding: 0;
   margin: 3;
-  list-style: none;
+  border: solid;
+  border-width: 4px 1.25em;
 }
 
 .flex-item {
