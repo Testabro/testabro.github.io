@@ -2,6 +2,10 @@ a {
     color: white;
   }
 
+body {
+    align-items: center;
+}
+
 #bio {
     align-items: center;
     justify-content: center;
