@@ -11,7 +11,7 @@ a {
 }
 
 #content {
-    vertical-align: top;
+    padding-top: 1px;
     background: white;
     text-align: left;
     color: black;
