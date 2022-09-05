@@ -6,6 +6,10 @@ a {
   justify-content: center;
 }
 
+#content {
+    justify-content: left;
+}
+
 .flex-container {
   /* We first create a flex layout context */
   display: flex;
@@ -36,6 +40,6 @@ a {
   color: white;
   font-weight: bold;
   font-size: 11pt;
-  text-align: left;
+  #text-align: left;
 }
 
