@@ -3,12 +3,12 @@ a {
   }
 
 #bio {
-  justify-content: center;
+  place-items: center;
   font-size: 200pt;
 }
 
 #content {
-    justify-content: left;
+    text-align: left;
 }
 
 .flex-container {
@@ -37,10 +37,8 @@ a {
   width: 300px;
   height: 500px;
   margin-top: 1px;
-  #line-height: 500px;
   color: white;
   font-weight: bold;
   font-size: 11pt;
-  #text-align: left;
 }
 
