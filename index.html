@@ -1,32 +1,283 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Use Case Demo</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href=".\main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Estabrook — Software Engineer</title>
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --bg2: #12121a;
+            --border: #1e2d4a;
+            --accent: #4a9eff;
+            --accent-dim: #2a5a9a;
+            --text: #c8d0dc;
+            --text-dim: #6a7080;
+            --text-bright: #e8eaf0;
+            --green: #22cc88;
+            --orange: #ff8844;
+            --purple: #9966ff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #6ab4ff; }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 80px 0 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--text-bright);
+            margin-bottom: 8px;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .links a:hover { color: var(--accent); }
+
+        /* Sections */
+        section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-child { border-bottom: none; }
+
+        section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-bright);
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.85rem;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+
+        /* Projects */
+        .project {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 16px;
+            transition: border-color 0.2s;
+        }
+
+        .project:hover { border-color: var(--accent-dim); }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .project h3 {
+            font-size: 1.15rem;
+            color: var(--text-bright);
+        }
+
+        .project h3 a { color: var(--text-bright); }
+        .project h3 a:hover { color: var(--accent); }
+
+        .project-lang {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            background: var(--bg);
+            padding: 3px 10px;
+            border-radius: 12px;
+            white-space: nowrap;
+        }
+
+        .project p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .project-tags span {
+            font-size: 0.75rem;
+            color: var(--accent);
+            background: rgba(74, 158, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 48px 0 32px; }
+            header h1 { font-size: 1.8rem; }
+            .project-header { flex-direction: column; gap: 8px; }
+        }
+    </style>
 </head>
+<body>
 
-<body class="is-preload">
-<table class="styled-table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Points</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>tombot</td>
-            <td>6000</td>
-        </tr>
-        <tr class="active-row">
-            <td>kirbbot</td>
-            <td>7150</td>
-        </tr>
-    </tbody>
-</table>
+<div class="container">
+    <header>
+        <h1>Tom Estabrook</h1>
+        <p class="subtitle">Software Engineer &mdash; C++, Python, React, Unreal Engine</p>
+        <div class="links">
+            <a href="https://github.com/testabro">GitHub</a>
+            <a href="https://medium.com/@thomas.r.estabrook">Blog</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill-tag">C++17</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Unreal Engine 5</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">RocksDB</span>
+            <span class="skill-tag">Boost</span>
+            <span class="skill-tag">CMake</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Event Sourcing</span>
+            <span class="skill-tag">IPC / Shared Memory</span>
+            <span class="skill-tag">GAS (Gameplay Ability System)</span>
+            <span class="skill-tag">CI/CD</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <div class="project-header">
+                <h3><a href="https://github.com/testabro/digital-wallet">digital-wallet</a></h3>
+                <span class="project-lang">C++</span>
+            </div>
+            <p>Backend wallet service with event sourcing architecture and state machine pattern. REST API for high-volume transaction processing backed by RocksDB.</p>
+            <div class="project-tags">
+                <span>event-sourcing</span>
+                <span>state-machine</span>
+                <span>rocksdb</span>
+                <span>boost</span>
+                <span>rest-api</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <h3><a href="https://github.com/testabro/interprocessComms">interprocessComms</a></h3>
+                <span class="project-lang">C++</span>
+            </div>
+            <p>Inter-process communication library using Boost shared memory message queues. Serialized message exchange between processes without callbacks.</p>
+            <div class="project-tags">
+                <span>ipc</span>
+                <span>shared-memory</span>
+                <span>boost</span>
+                <span>message-queue</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <h3><a href="https://github.com/testabro/tradewars-2025">tradewars-2025</a></h3>
+                <span class="project-lang">React / Firebase</span>
+            </div>
+            <p>Multiplayer BBS-style space trading game. Real-time sector navigation, commodity trading, ship combat, and investment systems.</p>
+            <div class="project-tags">
+                <span>react</span>
+                <span>firebase</span>
+                <span>vite</span>
+                <span>multiplayer</span>
+                <span>tailwindcss</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <h3><a href="https://github.com/testabro/academy-forest">academy-forest</a></h3>
+                <span class="project-lang">Python</span>
+            </div>
+            <p>Text-based adventure game with exploration, turn-based combat, inventory management, and a quest system. Classic MUD-inspired design.</p>
+            <div class="project-tags">
+                <span>text-adventure</span>
+                <span>oop</span>
+                <span>cli</span>
+                <span>game</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        &copy; 2025 Tom Estabrook
+    </div>
+</footer>
+
 </body>
-
 </html>
