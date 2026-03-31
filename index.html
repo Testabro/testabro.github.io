@@ -527,8 +527,6 @@ help: () => [
     { text: '  education    \u2014 academic credentials', cls: '' },
     { text: '  contact      \u2014 reach out', cls: '' },
     { text: '', cls: '' },
-    { text: '  stack        \u2014 the full systems picture', cls: '' },
-    { text: '', cls: '' },
     { text: '  coffee       \u2014 essential dependency', cls: 'dim' },
     { text: '  deploy       \u2014 if you dare', cls: 'dim' },
     { text: '  git log      \u2014 the ancient scrolls', cls: 'dim' },
@@ -655,29 +653,6 @@ projects: () => [
     { text: '  Because sometimes you just need to shoot aliens.', cls: 'dim' },
 ],
 
-stack: () => [
-    { text: '[ SYSTEMS STACK ]', cls: 'head' },
-    { text: '', cls: '' },
-    { text: '  These four projects form a complete systems picture:', cls: 'dim' },
-    { text: '', cls: '' },
-    { text: '  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510', cls: '' },
-    { text: '  \u2502  Web Frontend        tradewars-2025           \u2502', cls: 'cyan' },
-    { text: '  \u2502  React \u00b7 Firebase \u00b7 real-time multiplayer     \u2502', cls: '' },
-    { text: '  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524', cls: '' },
-    { text: '  \u2502  Game Logic           academy-forest           \u2502', cls: 'bright' },
-    { text: '  \u2502  Python \u00b7 OOP \u00b7 state machines \u00b7 CLI UX     \u2502', cls: '' },
-    { text: '  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524', cls: '' },
-    { text: '  \u2502  Backend Service      digital-wallet           \u2502', cls: 'warn' },
-    { text: '  \u2502  C++ \u00b7 REST \u00b7 event sourcing \u00b7 RocksDB     \u2502', cls: '' },
-    { text: '  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524', cls: '' },
-    { text: '  \u2502  Low-Level IPC        interprocessComms        \u2502', cls: 'err' },
-    { text: '  \u2502  C++ \u00b7 shared memory \u00b7 Boost \u00b7 serialization \u2502', cls: '' },
-    { text: '  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518', cls: '' },
-    { text: '', cls: '' },
-    { text: '  From kernel-level shared memory to browser UIs.', cls: 'dim' },
-    { text: '  I don\u2019t just work at one layer \u2014 I understand the whole pipe.', cls: 'dim' },
-],
-
 education: () => [
     { text: '[ EDUCATION ]', cls: 'head' },
     { text: '', cls: '' },
@@ -761,7 +736,7 @@ const CMD_NAMES = Object.keys(COMMANDS);
 /* ══════════════════════════════════════════════════════
    SHORTCUT BUTTONS
    ══════════════════════════════════════════════════════ */
-const SC_LIST = ['whoami','experience','skills','projects','stack','education','contact'];
+const SC_LIST = ['whoami','experience','skills','projects','education','contact'];
 let activeBtn = null;
 
 SC_LIST.forEach(function(name) {
