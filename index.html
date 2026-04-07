@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Estabrook — Software & Systems Engineer</title>
-    <meta name="description" content="Systems Engineer at AWS. Navy veteran. Virginia Tech grad. C++, Python, React, Unreal Engine.">
+    <meta name="description" content="Systems Engineer II at AWS. Virginia Tech MTech. C++, Python, AWS CDK, Unreal Engine 5.">
     <meta property="og:title" content="Tom Estabrook — Software & Systems Engineer">
     <meta property="og:description" content="Interactive terminal portfolio. Type 'help' to explore.">
     <meta property="og:type" content="website">
@@ -371,7 +371,7 @@
             <span class="dot dot-r" title="Close"></span>
             <span class="dot dot-y" title="Minimize"></span>
             <span class="dot dot-g" title="Maximize"></span>
-            <span class="titlebar-text">tom-estabrook.sh &mdash; portfolio v2025</span>
+            <span class="titlebar-text">tom-estabrook.sh &mdash; portfolio v2026</span>
         </div>
 
         <pre class="ascii" aria-hidden="true">  ______              ______     _        ____                 __
@@ -395,7 +395,7 @@
         <div class="shortcuts" id="shortcuts" role="toolbar" aria-label="Quick commands"></div>
 
         <div class="statusbar">
-            <span>PORTFOLIO v2025</span>
+            <span>PORTFOLIO v2026</span>
             <span id="cmdCount">0 commands</span>
             <span>UTF-8 | LF</span>
         </div>
@@ -483,7 +483,7 @@ const BOOT = [
     { text: 'Establishing uplink...        [OK]', cls: 'bright' },
     { text: '', cls: '' },
     { text: '  Hey. I\'m Tom Estabrook.', cls: 'bright' },
-    { text: '  Systems engineer, Navy vet, Virginia Tech grad,', cls: 'bright' },
+    { text: '  Systems engineer, Virginia Tech grad,', cls: 'bright' },
     { text: '  and the kind of person who builds games for fun', cls: 'bright' },
     { text: '  and fixes production at 2am because someone has to.', cls: 'bright' },
     { text: '', cls: '' },
@@ -537,10 +537,8 @@ whoami: () => [
     { text: '[ PROFILE ]', cls: 'head' },
     { text: '', cls: '' },
     { text: '  Name      Tom Estabrook', cls: 'bright' },
-    { text: '  Title     Systems Engineer @ Amazon Web Services', cls: 'bright' },
-    { text: '  Project   AWS Operations Management', cls: '' },
+    { text: '  Title     Systems Engineer II @ Amazon Web Services', cls: 'bright' },
     { text: '  Location  Leesburg, Virginia', cls: '' },
-    { text: '  Service   US Navy veteran (2004 \u2013 2012)', cls: 'cyan' },
     { text: '  Cert      CompTIA Security+', cls: '' },
     { text: '', cls: '' },
     { text: '  Full-stack systems thinker. Equally at home writing', cls: 'dim' },
@@ -557,9 +555,22 @@ experience: () => [
     { text: '[ WORK EXPERIENCE ]', cls: 'head' },
     { text: '', cls: '' },
 
-    { text: '  Amazon Web Services \u2014 Systems Engineer', cls: 'bright' },
-    { text: '  July 2025 \u2013 Present  \u2502  AWS Operations Management', cls: 'cyan' },
-    { text: '  The dream gig. Operating at planet scale.', cls: 'dim' },
+    { text: '  Amazon Web Services \u2014 Systems Engineer II', cls: 'bright' },
+    { text: '  Jul 2025 \u2013 Present', cls: 'cyan' },
+    { text: '  \u2502 Built full-stack ops platform: React, Lambda, DynamoDB,', cls: '' },
+    { text: '  \u2502   Cognito auth, deployed with AWS CDK', cls: '' },
+    { text: '  \u2502 Resolved monitoring outage across 13 global regions using', cls: '' },
+    { text: '  \u2502   topological sorting (Kahn\u2019s algo) \u2014 unblocked 5,000+ alerts', cls: '' },
+    { text: '  \u2502 Python CLI toolkit: dry-run defaults, circuit breakers,', cls: '' },
+    { text: '  \u2502   rate limiting \u2014 deprecated 4,400+ orphaned resources', cls: '' },
+    { text: '  \u2502 Security hardening: AWS Signature V4 auth, cloud-native', cls: '' },
+    { text: '  \u2502   migration, removed hardcoded creds & CDN dependencies', cls: '' },
+    { text: '  \u2502 Fixed Java/Maven conflicts in distributed builds;', cls: '' },
+    { text: '  \u2502   led Kotlin 2.x + Gradle 8.x framework upgrades', cls: '' },
+    { text: '  \u2502 Primary escalation across 30+ on-call rotation groups;', cls: '' },
+    { text: '  \u2502   mitigated high-severity production incidents', cls: '' },
+    { text: '  \u2514 Onboarded teams to centralized monitoring, authored runbooks,', cls: '' },
+    { text: '    built architecture diagrams, mentored engineers', cls: '' },
     { text: '', cls: '' },
 
     { text: '  CACI International \u2014 Linux Systems/Software Engineer', cls: 'bright' },
@@ -569,25 +580,28 @@ experience: () => [
     { text: '  Akamai Technologies \u2014 SRE / Platform Ops Engineer', cls: 'bright' },
     { text: '  Jul 2023 \u2013 Apr 2025  \u2502  Reston, VA', cls: 'cyan' },
     { text: '  \u2502 Managed custom virtualization infra for HA workloads', cls: '' },
-    { text: '  \u2502 Linux sysadmin: patching, config mgmt, troubleshooting', cls: '' },
-    { text: '  \u2502 Observability with custom SQL tooling', cls: '' },
-    { text: '  \u2502 Incident response & RCA in 24\u00d77 production', cls: '' },
-    { text: '  \u2514 Contributed to global IPv6 integration', cls: '' },
+    { text: '  \u2502 Linux sysadmin (Ubuntu): patching, config mgmt, troubleshooting', cls: '' },
+    { text: '  \u2502 Integrated observability solutions with custom SQL tooling', cls: '' },
+    { text: '  \u2502 Incident response & root cause analysis in 24\u00d77 production', cls: '' },
+    { text: '  \u2514 Contributed to global IPv6 network integration', cls: '' },
     { text: '', cls: '' },
 
     { text: '  ST Engineering iDirect \u2014 Technical Services Engineer', cls: 'bright' },
     { text: '  Jan 2019 \u2013 Sep 2023', cls: 'cyan' },
-    { text: '  \u2502 KVM/VMware virtualization platform deployment', cls: '' },
-    { text: '  \u2502 Ansible playbooks for standardized deployments', cls: '' },
+    { text: '  \u2502 Designed & deployed KVM/VMware virtualization platforms', cls: '' },
+    { text: '  \u2502 Ansible automation playbooks for standardized deployments', cls: '' },
+    { text: '  \u2502 Linux production troubleshooting: storage, networking, perf', cls: '' },
+    { text: '  \u2502 Implemented SSO across the organization', cls: '' },
+    { text: '  \u2502 Resolved API & network failures affecting customer billing', cls: '' },
     { text: '  \u2502 Bash & Python automation, log analysis, diagnostics', cls: '' },
-    { text: '  \u2502 Kafka queues & Kubernetes on Linux platforms', cls: '' },
-    { text: '  \u2514 Implemented SSO across the organization', cls: '' },
+    { text: '  \u2514 Incident response & RCA in 24\u00d77 production environment', cls: '' },
     { text: '', cls: '' },
 
     { text: '  Gromelski & Associates \u2014 Software Dev, Sys Integration', cls: 'bright' },
     { text: '  Feb 2017 \u2013 Dec 2018  \u2502  Manassas, VA', cls: 'cyan' },
-    { text: '  \u2502 Java & Bash dev on military sonar platform', cls: '' },
-    { text: '  \u2514 Distributed Linux systems for military applications', cls: '' },
+    { text: '  \u2502 Linux distributed systems for military applications', cls: '' },
+    { text: '  \u2502 Bash & Python automation for deployment & troubleshooting', cls: '' },
+    { text: '  \u2514 Feature integration while maintaining high availability', cls: '' },
     { text: '', cls: '' },
 
     { text: '  Lockheed Martin \u2014 System Analyst', cls: 'bright' },
@@ -595,31 +609,32 @@ experience: () => [
     { text: '  \u2514 Network documentation & deployment for national enclaves', cls: '' },
     { text: '', cls: '' },
 
-    { text: '  US Navy \u2014 Sailor', cls: 'bright' },
-    { text: '  Jul 2004 \u2013 Jul 2012', cls: 'cyan' },
-    { text: '  Where it all started. Discipline, systems thinking,', cls: 'dim' },
-    { text: '  and the ability to fix things under pressure.', cls: 'dim' },
 ],
 
 skills: () => [
     { text: '[ TECHNICAL SKILLS ]', cls: 'head' },
     { text: '', cls: '' },
     { text: '  Languages & Frameworks', cls: 'bright' },
-    { text: '    C++17 \u00b7 Python \u00b7 JavaScript/React \u00b7 Java \u00b7 Bash', cls: '' },
+    { text: '    C++ \u00b7 Python \u00b7 AWS CDK', cls: '' },
     { text: '', cls: '' },
-    { text: '  Systems & Cloud', cls: 'bright' },
-    { text: '    AWS \u00b7 RHEL/Ubuntu Linux \u00b7 KVM \u00b7 Docker \u00b7 Kubernetes', cls: '' },
+    { text: '  Cloud & Infrastructure', cls: 'bright' },
+    { text: '    AWS (Lambda, DynamoDB, Cognito, API Gateway, CDK)', cls: '' },
+    { text: '    RHEL/Ubuntu Linux \u00b7 KVM \u00b7 Docker \u00b7 Kubernetes', cls: '' },
     { text: '    VMware ESXi/vSphere \u00b7 Systemd', cls: '' },
     { text: '', cls: '' },
     { text: '  Automation & DevOps', cls: 'bright' },
-    { text: '    Ansible \u00b7 Jenkins \u00b7 Git \u00b7 CI/CD \u00b7 PowerShell', cls: '' },
+    { text: '    Ansible \u00b7 Jenkins \u00b7 Gradle \u00b7 Git \u00b7 Bitbucket \u00b7 CI/CD \u00b7 PowerShell', cls: '' },
     { text: '', cls: '' },
     { text: '  Networking & Security', cls: 'bright' },
-    { text: '    TCP/IP \u00b7 IPv4/IPv6 \u00b7 VLANs \u00b7 Firewalls \u00b7 SSH \u00b7 IAM \u00b7 SSO', cls: '' },
+    { text: '    TCP/IP \u00b7 IPv4/IPv6 \u00b7 VLANs \u00b7 Firewalls \u00b7 Load Balancing', cls: '' },
+    { text: '    IAM \u00b7 Cognito \u00b7 AWS SigV4 \u00b7 SSO \u00b7 SSH', cls: '' },
     { text: '    CompTIA Security+ certified', cls: 'cyan' },
     { text: '', cls: '' },
-    { text: '  Data & Messaging', cls: 'bright' },
-    { text: '    PostgreSQL \u00b7 Firebase \u00b7 RocksDB \u00b7 Kafka', cls: '' },
+    { text: '  Observability & Monitoring', cls: 'bright' },
+    { text: '    Kafka \u00b7 Nagios \u00b7 Distributed telemetry systems', cls: '' },
+    { text: '', cls: '' },
+    { text: '  Databases', cls: 'bright' },
+    { text: '    PostgreSQL \u00b7 MySQL \u00b7 DynamoDB \u00b7 Firebase \u00b7 RocksDB', cls: '' },
     { text: '', cls: '' },
     { text: '  Game Development', cls: 'bright' },
     { text: '    Unreal Engine 5 \u00b7 Gameplay Ability System \u00b7 Blueprints', cls: '' },
